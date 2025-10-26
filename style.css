@@ -1,0 +1,101 @@
+/* 기본 스타일 */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.casino-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1c1c2e, #3a2a50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slot-title {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem; /* 글자 크기 크게 */
+  font-weight: bold;
+  color: gold;
+  text-shadow: 2px 2px 5px black;
+}
+
+.slot-machine {
+  position: relative;
+  width: 40%;
+  height: 300px; /* 슬롯머신 세로 길이 증가 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 릴 수직 중앙 정렬 */
+  background: #222;
+  border: 4px solid gold;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px gold;
+}
+
+.reel {
+  width: 30%;
+  height: 150px; /* 기존 릴 높이 유지 */
+  background: rgba(255,255,255,0.1);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; /* 기존 폰트 크기 */
+  color: white;
+  overflow: hidden;
+}
+
+.reel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.reel .seven {
+  font-size: 3rem; /* 7만 크게 */
+  color: red;
+  font-weight: bold;
+}
+
+.lever {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 100px;
+  background: gold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.capture-text {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 9pt;
+  color: white;
+}
+
+canvas#fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
